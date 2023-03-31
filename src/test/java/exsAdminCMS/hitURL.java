@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import exsAdminCMS.Notification.notifications;
+import exsAdminCMS.rewards.rewards;
 import exsAdminCMS.test.AdminLogin;
 import exsAdminCMS.test.VerifyLogin;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -26,8 +27,13 @@ public class hitURL {
         verify.verify(driver);
 
         // admin Notification click function
-        notifications notification = new notifications();
-        notification.getNotificationButton(driver);
+//        notifications notification = new notifications();
+//        notification.getNotificationButton(driver);
+
+        // admin Notification click function
+        rewards reward = new rewards();
+        reward.getReward(driver); 
+
 
     }
 }
