@@ -8,6 +8,6 @@ public class rewards {
     public void getReward(WebDriver driver) {
         //			addNft.nftadd(driver);
 			driver.findElement(By.xpath("/html/body/section[2]/div/div/div[12]/div")).click(); //main reward button
-		//	driver.findElement(By.linkText("Add Notification")).click(); //Add notification button
+			driver.findElement(By.linkText("Athlete Reward Requests")).click(); 
     }
 }

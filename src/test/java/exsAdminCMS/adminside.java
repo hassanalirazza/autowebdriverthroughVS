@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import exsAdminCMS.Notification.notifications;
+import exsAdminCMS.adminLogin.AdminLogin;
+import exsAdminCMS.adminLogin.VerifyLogin;
 import exsAdminCMS.rewards.rewards;
-import exsAdminCMS.test.AdminLogin;
-import exsAdminCMS.test.VerifyLogin;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class hitURL {
+public class adminside {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.http.factory", "jdk-http-client"); // use for Ip configured
         WebDriverManager.chromedriver().setup();
