@@ -4,8 +4,11 @@ import org.openqa.selenium.By;
 
 public class athleteLogin {
 
+    By useremail = new By.ById("email");
+
     public void athletelogin(WebDriver driver) {
-        driver.findElement(By.id("email")).sendKeys("nc1mwan@yopmail.com"); // athlete email
+    //    driver.findElement(By.id("email")).sendKeys("nc1mwan@yopmail.com"); // athlete email
+        driver.findElement(useremail).sendKeys("nc1mwan@yopmail.com"); // athlete email
         driver.findElement(By.id("password")).sendKeys("c99b8b20bbf8"); //athlete password
         driver.findElement(By.xpath("/html/body/section[2]/div/div/div/div[1]/form/div[3]/div[1]/input")).click(); //Login button
         
